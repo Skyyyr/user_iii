@@ -1,1 +1,20 @@
-# Import and create your users here
+from users.FreeUser import FreeUser
+from users.PremiumUser import PremiumUser
+
+# bob = User("bob", "bob@bob.com")
+# jeff = User("jeff", "name@jeff.com")
+# bob.addPost("This is my first post.")
+# bob.addPost("My Second post.")
+# jeff.addPost("Hello, all!")
+# bob.removeUserPost(1)
+susan = FreeUser("susan", "something@cool.com")
+susan.addPost("This is my first post.")
+susan.addPost("My Second post.")
+susan.addPost("Third post.")
+print(susan.getUserPosts())
+dan = PremiumUser("dan", "awesome@sauce.com")
+dan.addPost("This is my first post.")
+dan.addPost("My Second post.")
+dan.addPost("Third post.")
+print(dan.getAllUserPosts)
+print(susan.getAllUserPosts)
