@@ -1,4 +1,4 @@
-from users.User import User
+from User import User
 
 class FreeUser(User):
 
